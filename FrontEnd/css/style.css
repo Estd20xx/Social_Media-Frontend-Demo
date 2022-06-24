@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #030303;
+}
+
+i {
+    color: rgb(255, 255, 255);
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.container {
+    margin-top: 60px;
+    width: 100%;
+
+}
+
+/* ---Navbar section */
+
+/* --Left */
+.navbar {
+    margin-bottom: 30px;
+    margin-top: -60px;
+    position: fixed;
+    background-color: #1A1A1B;
+    height: 6vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo {
+    width: 32%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 35px;
+    padding-left: 10px;
+}
+
+.navbar .logo h1 {
+    padding-left: 10px;
+    font-size: 1.4rem;
+}
+
+/* ---Middle */
+.navbar .search {
+    width: 32%;
+}
+
+.navbar .search input {
+    padding-left: 10px;
+    height: 5vh;
+    margin-left: 10px;
+    width: 96%;
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+    background-color: #262629;
+    border: 1px solid #464648;
+}
+
+.navbar .search input:hover {
+    background-color: #1A1A1B;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.navbar .search input:focus {
+    background-color: #1A1A1B;
+}
+
+/* --Last-- */
+.navbar .UserInfo {
+    margin-left: 60px;
+    display: flex;
+    justify-content: end;
+    width: 32%;
+}
+
+.navbar .UserInfo .bell {
+    padding-left: 7px;
+    display: flex;
+    align-items: center;
+    height: 35px;
+    padding-left: -2px;
+    width: 35px;
+    margin-left: 2px;
+    border-radius: 3px;
+}
+
+.navbar .UserInfo .bell:hover {
+    background-color: #373535;
+}
+
+.navbar .UserInfo .comment {
+    padding-left: 7px;
+    display: flex;
+    align-items: center;
+    height: 35px;
+    padding-left: -2px;
+    width: 35px;
+    margin-left: 2px;
+    border-radius: 3px;
+}
+
+.navbar .UserInfo .comment:hover {
+    background-color: #373535;
+}
+
+.navbar .UserInfo .profile {
+    padding-left: 7px;
+    display: flex;
+    align-items: center;
+    height: 35px;
+    padding-left: -2px;
+    width: 35px;
+    margin-left: 2px;
+    border-radius: 3px;
+}
+
+.navbar .UserInfo .profile:hover {
+    background-color: #373535;
+}
+
+.navbar .UserInfo i {
+    font-size: 22px;
+    padding-right: 30px;
+}
+
+/* Create Post */
+.CreatePost {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 0 375px;
+    background-color: #1A1A1B;
+    width: 45%;
+    height: 50px;
+    border-radius: 3px;
+    border: 1px solid rgb(75, 72, 72);
+}
+
+.CreatePost .UserPhoto img {
+    height: 50px;
+    padding-left: 3px;
+}
+
+.CreatePost .PostData {
+    width: 78%;
+    margin-left: 10px;
+}
+
+.CreatePost .PostData input {
+    height: 35px;
+    width: 100%;
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+    background-color: #262629;
+    border: 1px solid #464648;
+}
+
+.CreatePost .PostData input:hover {
+    background-color: #1A1A1B;
+    border: 2px solid rgb(255, 255, 255);
+
+}
+
+/* --LastOne--- */
+.CreatePost .PostOption {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    width: 12%;
+    padding-left: 5px;
+}
+
+.CreatePost .PostOption i {
+    position: relative;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.CreatePost .PostOption .image {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    width: 37px;
+}
+
+.CreatePost .PostOption .image:hover {
+    background-color: #373535;
+}
+
+.CreatePost .PostOption .link {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    padding-left: -2px;
+    width: 35px;
+    margin-left: 2px;
+    border-radius: 3px;
+}
+
+.CreatePost .PostOption .link:hover {
+    background-color: #373535;
+}
+
+/* ---DownConatainer part */
+.DownContainer {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 0 375px;
+    background-color: #1A1A1B;
+    border: 1px solid rgb(75, 72, 72);
+    width: 45%;
+    height: 50px;
+    border-radius: 3px;
+}
+
+.DownContainer span {
+    padding-left: 8px;
+    color: rgb(190, 206, 221);
+    font-family: 'Anek Latin', sans-serif;
+    font-weight: 800;
+}
+
+.DownContainer .DownFirst {
+    display: flex;
+    height: 45px;
+    align-items: center;
+    width: 80%;
+}
+
+.DownContainer .DownFirst .Best {
+    margin-left: 10px;
+    display: flex;
+    height: 30px;
+    align-items: center;
+    justify-content: space-around;
+    width: 13%;
+    border-radius: 3px;
+    padding: 0 20px;
+}
+
+.DownContainer .DownFirst .Hot {
+    border-radius: 3px;
+    margin-left: 10px;
+    display: flex;
+    height: 30px;
+    align-items: center;
+    width: 15%;
+    padding: 0 20px;
+}
+
+.DownContainer .DownFirst .New {
+    border-radius: 3px;
+    margin-left: 10px;
+    display: flex;
+    height: 30px;
+    align-items: center;
+    width: 15%;
+    padding: 0 20px;
+}
+
+.DownContainer .DownFirst .Top {
+    border-radius: 3px;
+    margin-left: 10px;
+    display: flex;
+    height: 30px;
+    align-items: center;
+    width: 15%;
+    padding: 0 20px;
+}
+
+.DownContainer .DownFirst .Best:hover,
+.Hot:hover,
+.New:hover,
+.Top:hover {
+    background-color: #262629;
+}
+
+.DownContainer .DownSecond {
+    margin-left: 75px;
+    padding-left: 3px;
+    border-radius: 3px;
+    height: 36px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.DownContainer .DownSecond:hover {
+    background-color: #262629;
+}
+
+/* Some Important data */
+.container .SomeImpo {
+    display: flex;
+    align-items: center;
+    margin: 6px 0 5px 375px;
+    background-color: #1A1A1B;
+    border: 1px solid rgb(75, 72, 72);
+    width: 45%;
+    height: 550px;
+    border-radius: 3px;
+}
+
+.container .SomeImpo:hover {
+    border: 1px solid rgb(201, 189, 189);
+}
+
+.container .SomeImpo .SomeImpoLeft {
+    background-color: #101010;
+    display: block;
+    width: 6%;
+    height: 548px;
+}
+
+.container .SomeImpo .SomeImpoLeft i {
+    padding: 5px 0 5px 8px;
+    font-size: 30px;
+}
+
+.container .SomeImpo .SomeImpoLeft .Data {
+    color: rgb(255, 255, 255);
+    font-family: cursive;
+    font-weight: 700;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .SomeImpo .SomeImpoRight {
+    width: 95%;
+    height: 99%;
+
+}
+
+.container .SomeImpo .SomeImpoRight .SomeImpoRigntTop {
+    height: 50px;
+}
+
+.container .SomeImpo .SomeImpoRight .SomeImpoRigntTop .SomeImpoRigntTopUserinfo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.Status {
+    padding-left: 5px;
+    font-family: monospace;
+    font-weight: 400;
+    color: azure;
+    height: 30px;
+}
+
+.container .SomeImpo .SomeImpoRight .SomeImpoRigntTop .SomeImpoRigntTopUserinfo img {
+    height: 40px;
+    padding-left: 4px;
+}
+
+.SomeImpoRigntTopUserinfoUsername {
+    padding-left: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 7px;
+    font-weight: 800;
+}
+
+.SomeImpoRigntTopUserinfoUsername:hover {
+    text-decoration: underline;
+}
+
+.container .SomeImpo .SomeImpoRight .SomeImpoRigntMiddle {
+    height: 420px;
+}
+
+.container .SomeImpo .SomeImpoRight .SomeImpoRigntMiddle img {
+    height: 420px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.container .SomeImpo .SomeImpoRight .SomeImpoRigntBottom {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+    width: 100%;
+    height: 39px;
+}
+
+.SomeImpoRigntBottom span {
+    padding-left: 10px;
+    color: #c5b4b4;
+    font-weight: 850;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.SomeImpoRigntBottom .Like,
+.CommentDown,
+.share,
+.Save {
+    height: 30px;
+    display: flex;
+    border-radius: 3px;
+    align-items: center;
+    margin-left: 40px;
+    padding: 0 5px 0 5px;
+}
+
+.SomeImpoRigntBottom .Like:hover,
+.CommentDown:hover,
+.share:hover,
+.Save:hover {
+    background-color: #262629;
+}
+
+
+
+
+.Whole{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+.Coverpic{
+    border-radius: 3px;
+    margin-top: 20px;
+    height: 50vh;
+    background-color: #1A1A1B;
+    width: 70%;
+}
+.Whole .Coverpic img{
+    border-radius: 3px;
+    object-fit: cover;
+    height: 50vh;
+    width: 100%;
+}
+.ProfilePhoto{
+    align-items: center;
+    background-color: #1A1A1B;
+    height: 130px;
+}
+.ProfilePhoto img{
+    padding-left: 40px;
+    height: 90px;
+    border-radius:10px;
+}
+.mid{
+    height: 130px;
+    width: 300px;
+    margin-left: 720px;
+}
+.mid h2{
+    padding-top: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 3px;
+    color: #ffffff;
+}
